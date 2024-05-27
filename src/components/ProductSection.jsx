@@ -1,4 +1,3 @@
-// src/components/ProductSection.js
 
 import React from 'react';
 import { Container, Row, Col, Form, Button, Card, Carousel } from 'react-bootstrap';
@@ -72,13 +71,7 @@ const ads = [
 const ProductSection = () => {
   return (
     <Container className=''>
-      <Row className="my-4">
-        <Col className=''>
-          <Form className='border border-danger border-3 rounded rounded-pill overflow-hidden'>
-            <Form.Control type="text" placeholder="Search for products..." />
-          </Form>
-        </Col>
-      </Row>
+     
       <Row>
         <Col md={8}>
         <Row className=''>

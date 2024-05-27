@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import ProductSection from './components/ProductSection';
 
+import './fontawesome';
+
 function App() {
   return (
     <div>
