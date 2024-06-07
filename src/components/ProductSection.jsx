@@ -1,6 +1,15 @@
 
 import React from 'react';
 import { Container, Row, Col, Form, Button, Card, Carousel } from 'react-bootstrap';
+import festeggia from "../img/30Anni.png"
+import primaFilla1 from "../img/PrimaFilla/Astuccio.jpg"
+import primaFilla2 from "../img/PrimaFilla/Bauletto.jpg"
+import primaFilla3 from "../img/PrimaFilla/Cappellino Pikachu.jpg"
+import primaFilla4 from "../img/PrimaFilla/Cappellino Snorlax.jpg"
+import primaFilla5 from "../img/PrimaFilla/Carte Accademia Lotta Serie 3.jpg"
+
+
+
 
 const products = [
   {
@@ -46,23 +55,46 @@ const products = [
 
 const ads = [
   {
-    image: 'https://via.placeholder.com/300x150',
-    title: 'Ad 1',
+    image: festeggia,
+    title: 'Festeggia con noi',
   },
   {
-    image: 'https://via.placeholder.com/300x150',
+    image: festeggia,
     title: 'Ad 2',
   },
   {
-    image: 'https://via.placeholder.com/300x150',
+    image: festeggia,
     title: 'Ad 3',
   },
   {
-    image: 'https://via.placeholder.com/300x150',
+    image: festeggia,
     title: 'Ad 4',
   },
   {
-    image: 'https://via.placeholder.com/300x150',
+    image: festeggia,
+    title: 'Ad 5',
+  },
+  // Add more ads as needed
+];
+const primaFilla = [
+  {
+    image: primaFilla1,
+    title: 'primaFilla1',
+  },
+  {
+    image: primaFilla2,
+    title: 'Ad 2',
+  },
+  {
+    image: primaFilla3,
+    title: 'Ad 3',
+  },
+  {
+    image: primaFilla4,
+    title: 'Ad 4',
+  },
+  {
+    image: primaFilla5,
     title: 'Ad 5',
   },
   // Add more ads as needed
@@ -77,21 +109,19 @@ const ProductSection = () => {
           <Carousel>
             {ads.map((ad, index) => (
               <Carousel.Item key={index}>
-                -<img className="d-block w-100" src={ad.image} alt={ad.title} />
-                <Carousel.Caption>
-                  <h5>{ad.title}</h5>
-                </Carousel.Caption>
+                <img className="d-block w-100" src={ad.image} alt={ad.title} />
+
               </Carousel.Item>
             ))}
           </Carousel>
           </Col>
           <Col sm={12} md={6} >
           <Carousel>
-            {ads.map((ad, index) => (
+            {primaFilla.map((ad, index) => (
               <Carousel.Item key={index}>
-                -<img className="d-block w-100" src={ad.image} alt={ad.title} />
+              <img className="" style={{ maxWidth:"100%"}}  src={ad.image} alt={ad.title} />
                 <Carousel.Caption>
-                  <h5>{ad.title}</h5>
+                  {/* <h5>{ad.title}</h5> */}
                 </Carousel.Caption>
               </Carousel.Item>
             ))}
