@@ -73,7 +73,7 @@ const ads = [
   {
     image: festeggia,
     title: 'Ad 5',
-  },
+  }
   // Add more ads as needed
 ];
 const primaFilla = [
@@ -96,7 +96,7 @@ const primaFilla = [
   {
     image: primaFilla5,
     title: 'Ad 5',
-  },
+  }
   // Add more ads as needed
 ];
 
@@ -105,7 +105,7 @@ const ProductSection = () => {
     <Container className=''>
      
      <Row className='mb-3'>
-     <Col sm={12} md={6} >
+     <Col sm={12} md={12} lg={6} >
           <Carousel>
             {ads.map((ad, index) => (
               <Carousel.Item key={index}>
@@ -115,7 +115,7 @@ const ProductSection = () => {
             ))}
           </Carousel>
           </Col>
-          <Col sm={12} md={6} >
+          <Col sm={12} md={12} lg={6} >
           <Carousel>
             {primaFilla.map((ad, index) => (
               <Carousel.Item key={index}>
