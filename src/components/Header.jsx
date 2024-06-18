@@ -14,7 +14,7 @@ const Header = () => {
         
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-        <Form className="d-flex   overflow-hidden">
+        <Form className="d-flex  overflow-hidden w-100">
             <FormControl
               type="search"
               placeholder="Cerca un prodotto"
